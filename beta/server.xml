@@ -8,7 +8,8 @@
 		  host="*"
                   httpPort="9080"
                   httpsPort="9443" />
-
+<!-- The keystore file overrides the cacerts read from the JVM. 
+In case you want to read a specific CA Cert (.cer) file added to the cacerts under JVM, you need to comment the keyStore tag here -->
     <keyStore id="defaultKeyStore"
               password="Liberty" />
 
